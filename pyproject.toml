@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-reliability-lab"
+version = "0.1.0"
+description = "Deterministic local multi-agent reliability lab for LLMOps and agentic workflow testing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Sameeruddin Mir" }
+]
+keywords = [
+  "ai-agents",
+  "llmops",
+  "reliability",
+  "evaluation",
+  "observability",
+  "safety",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+agent-reliability-lab = "agent_reliability_lab.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
