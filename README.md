@@ -1,6 +1,6 @@
 # Agent Reliability Lab
 
-Agent Reliability Lab is a local, deterministic multi-agent testbed for agentic workflow reliability. It is designed as a public portfolio project for Sameeruddin Mir and targets AI Software Engineer, Agentic Workflows, and LLMOps roles.
+Agent Reliability Lab is a local, deterministic multi-agent testbed for reliability, safety, and observability in agentic workflows.
 
 The project intentionally uses only the Python standard library for the runnable core. No network calls, paid API keys, model providers, or external services are required for the demo or tests.
 
@@ -82,9 +82,9 @@ The built-in evaluation harness reports these metrics:
 
 Regression scenarios cover successful completion, retry recovery, prompt injection, ambiguous goals, harmful requests, and cost budget pressure.
 
-## Why This Is Resume-Relevant
+## Production Reliability Concerns
 
-This repo maps directly to production agent reliability concerns:
+The harness exercises common production agent reliability concerns:
 
 - LLMOps evaluation harnesses and deterministic regression suites
 - Structured traces for observability and debugging
@@ -93,7 +93,7 @@ This repo maps directly to production agent reliability concerns:
 - Human-in-the-loop boundaries for unclear or sensitive work
 - Prompt-injection defense on retrieved content
 
-The implementation is intentionally small enough to review quickly while still showing production patterns that transfer to LangGraph, LangChain, OpenAI Agents SDK, or internal agent platforms.
+The implementation is intentionally compact while preserving production patterns that transfer to LangGraph, LangChain, OpenAI Agents SDK, or internal agent platforms.
 
 ## Trace Artifact References
 
